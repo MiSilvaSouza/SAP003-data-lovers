@@ -6,19 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Campeões do LOL</h1>
-    <div>
-      <form class="Champion">
+    <h1 class="title">Champions do LOL</h1>
+    <main>
+      <form class="Option">
+        <label>Escolha uma função:</label>
         <select>
-          <option value="Dificulty">Dificuldade</option>
-          <option value="Function">Função</option>
+          <option value="Assassin">Assassinos</option>
+          <option value="Tank">Tanque</option>
+          <option value="Fighter">Lutador</option>
+          <option value="Magic">Magicos</option>
+          <option value="Marksman">Atirador</option>
+          <option value="Suport">Suporte</option>
         </select>
-        <input id="show" type="submit">
+        <button id="button" type="submit">Procurar</button>
       </form>
     </div>
     <div>
       <ul id="Champions"></ul>
     </div>
+    </main>
     <div id="root"></div>
     <!-- <script src="data/injuries/injuries.js"></script> -->
     <script src="data/lol/lol.js"></script> 

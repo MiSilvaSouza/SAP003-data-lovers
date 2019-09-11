@@ -6,10 +6,19 @@
 };
 
 window.example = example;*/
+let arrayChampions = Object.values(LOL.data);
+let arrayFunction = [];
 
-const myPersonage = () => {
-  //Object.value(LOL.data.)
-  console.log(LOL.data.Aatrox.info)
-  return LOL.data.Aatrox.info.difficulty;
+const ChampionsAssassin = () => {
+  arrayChampions.map((item) => {
+    console.log(item.tags);
+    console.log(item.tags[0])
+    /*if(){
+      arrayFunction.push(item.name, item.stats.hp);
+    };*/
+  })
+  return 
   }
-window.myPersonage = myPersonage;
+  
+  
+window.ChampionsAssassin = ChampionsAssassin;
