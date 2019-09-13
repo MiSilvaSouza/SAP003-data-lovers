@@ -27,4 +27,21 @@ body {
 }
 #Champions {
     border: 3px solid yellowgreen;
+    background-color: rgb(211, 208, 208);
+    margin: 10px;
+    padding: 3px;
+    
+}
+p {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: rgb(211, 208, 208);
+    margin: 3px;
+    padding: 20x;
+    
+}
+img {
+    display: inline-block;
+    padding: 10px;
+    height: 60px;
 }

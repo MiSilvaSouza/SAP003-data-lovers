@@ -14,11 +14,17 @@ const allChampions = () => {
   for(item of Object.keys(dataChampions)){
     nameChampions.push(item);
     imgChampions.push(dataChampions[item].img);
-    //arrayChampions.sort()
   }
-  return Champions, imgChampions;
+  return nameChampions, imgChampions;
 }
 window.allChampions = allChampions
+
+
+
+
+
+
+
 
 
 
