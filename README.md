@@ -1,4 +1,4 @@
-# Data Lovers
+# LOL CHAMPIONS
 
 # DEFINIÇÃO DO PRODUTO
 
