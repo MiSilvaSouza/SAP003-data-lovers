@@ -1,4 +1,4 @@
-# Data Lovers
+# LOL CHAMPIONS
 
 # DEFINIÇÃO DO PRODUTO
 
@@ -11,7 +11,12 @@ Essas informações são:
   - Velocidade de Ataque
   - Velocidade de Movimento
 
+![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout.png)
+
 # História do Usuário
+
+Para elaboração do produto, consideramos histórias de usuários. 
+Para conhercermos nossos usuários buscamos mais informações estatísticas sobre o perfil de jogadores. As informações obtidas foram:
 
  - 85% dos nossos usuário tem perfil de idade entre 16 e 30 anos.
  - 60% têm curso superior completo.
@@ -20,15 +25,18 @@ Essas informações são:
 [Fonte](https://www.whow.com.br/global-trends/riot-jogadores-lol-game/) 
  
 
-A necessidade do usuário é conseguir fazer a melhor escolha de personagem (campeão) para jogar uma partida.
-Com o nosso produto ele conseguirá informações de características desse personagem que o ajudará na escolha.
+**Henrique Batista**
+
+  - Idade: 17 anos
+  - Necessidade: Lista de todos os personagens listados em ordem alfabética.
 
 **Homero Ramos**
 
   - Idade: 30 anos
-  - Necessidade: Conhecer e ter fácil acesso à informações do personagem escolhido para jogar.
+  - Necessidade: Filtrar personagens por função.
 
 **Luiz Otávio**
 
   - Idade: 23 anos
-  - Necessidade: Procurar o personagem para jogar.
+  - Necessidade: Calcular ganhos de habilidades por level.
+
