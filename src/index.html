@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1 class="title">Champions do LOL</h1>
+  <header class="title">
+    <img class="logo" src="League_of_Legends_logo.png">
+    <h1>Champions do LOL</h1>
+  </header>
+  <nav class="bar">
+    <label>Escolha uma função:</label>
+    <select id="option">
+      <option value="Assassin">Assassinos</option>
+      <option value="Tank">Tanque</option>
+      <option value="Fighter">Lutador</option>
+      <option value="Mage">Mágicos</option>
+      <option value="Marksman">Atirador</option>
+      <option value="Suport">Suporte</option>
+    </select>
+    <button id="btn" type="submit">Filtrar</button>
+  </nav>
   <main>
-    <!--<form class="Option">
-        <label>Escolha uma função:</label>
-        <select>
-          <option id="Assassin" value="Assassin">Assassinos</option>
-          <option value="Tank">Tanque</option>
-          <option value="Fighter">Lutador</option>
-          <option value="Magic">Magicos</option>
-          <option value="Marksman">Atirador</option>
-          <option value="Suport">Suporte</option>
-        </select>
-        <button id="button" type="submit">Procurar</button>
-      </form>-->!
     <div id="Champions"></div>
   </main>
   <div id="root"></div>
