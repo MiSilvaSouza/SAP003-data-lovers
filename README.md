@@ -1,4 +1,4 @@
-# LOL CHAMPIONS
+# Data Lovers
 
 # DEFINIÇÃO DO PRODUTO
 
@@ -11,7 +11,9 @@ Essas informações são:
   - Velocidade de Ataque
   - Velocidade de Movimento
 
-![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout.png)
+  PROTÓTIPO 1
+
+![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
 
 # História do Usuário
 
