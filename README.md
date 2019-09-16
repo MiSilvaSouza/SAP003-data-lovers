@@ -1,4 +1,4 @@
-# DATA LOVERS
+# Data Lovers
 
 # DEFINIÇÃO DO PRODUTO
 
