@@ -1,6 +1,16 @@
-document.getElementById("button").addEventListener("click", Change);
+const dataLOL = LOL.data;
+const resultado = document.getElementById("resultado") 
+let nome = ""
+let img = ""
+let champions = ""
+ 
 
-function Change() {
-    event.preventDefault();
-    document.getElementById("Champions").innerHTML = ChampionsAssassin();
+window.onload = function listar() {
+    for (let chave of Object.keys(dataLOL)) {            
+        img = (dataLOL[chave].img);   
+        nome = chave;     
+        champions += `<span><img src="${img}"/><br>`+`${nome}</span>`;    
+        resultado.innerHTML = champions;        
+    }     
+    
 }
