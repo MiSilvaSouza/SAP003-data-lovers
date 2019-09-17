@@ -10,6 +10,6 @@ window.onload = function listar() {
         nome = chave;     
         champions += `<span><img src="${img}"/><br>`+`${nome}</span>`;    
         resultado.innerHTML = champions;        
-    }     
+    }  
     
 }
