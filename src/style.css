@@ -40,13 +40,12 @@ span {
     margin-top: 1%;
     padding: 15px;
     text-align: center;    
-    position: relative;    
-         
+    position: relative;  
+       
    
 }
 #resultado {   
     display: flex;    
     flex-wrap: wrap;  
-    
     
 }

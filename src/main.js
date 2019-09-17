@@ -4,7 +4,6 @@ let nome = ""
 let img = ""
 let champions = ""
  
-
 window.onload = function listar() {
     for (let chave of Object.keys(dataLOL)) {            
         img = (dataLOL[chave].img);   
