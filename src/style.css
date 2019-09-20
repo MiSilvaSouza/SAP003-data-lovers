@@ -21,17 +21,16 @@ body {
     border: 3px solid black;
     margin: 30px;
     padding: 20px;
-    text-align: left;
-    
+    text-align: left;    
 }
 
 label {
     background-color: rgb(146, 144, 144);    
     margin: 30px;
     padding: 20px;
-    text-align: left;
-       
+    text-align: left;       
 }
+
 span {
     background-color: rgb(211, 208, 208);
     border: 3px solid black;
@@ -40,12 +39,10 @@ span {
     margin-top: 1%;
     padding: 15px;
     text-align: center;    
-    position: relative;
-       
-   
+    position: relative; 
 }
+
 #resultado {   
     display: flex;    
-    flex-wrap: wrap;  
-    
+    flex-wrap: wrap;    
 }
