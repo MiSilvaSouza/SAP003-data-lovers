@@ -6,26 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri|Squada+One&display=swap">
 </head>
 
 <body>
-  <header class="title">
-    <img class="logo" src="League_of_Legends_logo.png">
-    <h1>Champions do LOL</h1>
-  </header>
-  <nav class="bar">
-    <label>Escolha uma função:</label>
-    <select id="option">
-      <option value="Assassin">Assassinos</option>
-      <option value="Tank">Tanque</option>
-      <option value="Fighter">Lutador</option>
-      <option value="Mage">Mágicos</option>
-      <option value="Marksman">Atirador</option>
-      <option value="Suport">Suporte</option>
-    </select>
-    <button id="btn" type="submit">Filtrar</button>
+  <div class="back">
+    <header>
+      <img class="logo" src="League_of_Legends_logo.png">
+      <h1>The Best Champions</h1>
+    </header>
+    <nav class="bar">
+      <button id="home">Home</button>
+      <select id="option">
+        <option value="none">Filtrar</option>
+        <option value="Assassin">Assassinos</option>
+        <option value="Tank">Tanque</option>
+        <option value="Fighter">Lutador</option>
+        <option value="Mage">Mágicos</option>
+        <option value="Marksman">Atirador</option>
+        <option value="Support">Suporte</option>
+      </select>
+      <select id="higher">
+        <option value="none">Ordenar maior</option>
+        <option value="life">vida</option>
+        <option value="damage">AD</option>
+        <option value="velAttack">AS</option>
+        <option value="velMove">vel.Move</option>
+        <option value="regenLife">reg.Vida</option>
+        <option value="armor">armadura</option>
+      </select>
+      <select id="level">
+        <option value="none">Level</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+      </select>
+  </div>
   </nav>
-  <main>
+  <main class="board">
     <div id="Champions"></div>
   </main>
   <div id="root"></div>
