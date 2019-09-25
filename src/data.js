@@ -18,5 +18,5 @@ function ordenar (data) {
 }
 
 function calcular (data, perlevel, level) {
-  return data + (perlevel * level); 
+  return data + (perlevel * (level -1)); 
 }

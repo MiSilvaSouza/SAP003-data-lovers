@@ -36,6 +36,6 @@ describe("calcular", () => {
   });
 
   it("retorna `valor calculado por level`", () => {
-    expect(data.calcular(537.8, 85, 2)).toEqual(707.8);
+    expect(data.calcular(537.8, 85, 2)).toEqual(622.8);
   });
 });

@@ -11,6 +11,8 @@ Essas informações são:
   - Velocidade de Ataque
   - Velocidade de Movimento
 
+  O usuário poderá visualizar essas informações em ordem crescente ou decrescente. Ele também poderá ver as informações calculadas por level escolhido.
+
   PROTÓTIPO 1
 
 ![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
@@ -18,7 +20,7 @@ Essas informações são:
 # História do Usuário
 
 Para elaboração do produto, consideramos histórias de usuários. 
-Para conhercermos nossos usuários buscamos mais informações estatísticas sobre o perfil de jogadores. As informações obtidas foram:
+Para conhercermos melhor nossos usuários, buscamos estatísticas sobre o perfil de jogadores. As informações obtidas foram:
 
  - 85% dos nossos usuário tem perfil de idade entre 16 e 30 anos.
  - 60% têm curso superior completo.
@@ -30,12 +32,12 @@ Para conhercermos nossos usuários buscamos mais informações estatísticas sob
 **Henrique Batista**
 
   - Idade: 17 anos
-  - Necessidade: Lista de todos os personagens listados em ordem alfabética.
+  - Necessidade: Visualizar todos os personagens listados em ordem alfabética.
 
 **Homero Ramos**
 
   - Idade: 30 anos
-  - Necessidade: Filtrar personagens por função.
+  - Necessidade: Filtrar personagens por função, visualizar habilidades e ordenar por ordem crescente ou decrescente.
 
 **Luiz Otávio**
 
