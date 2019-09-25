@@ -9,24 +9,64 @@
     <link href="https://fonts.googleapis.com/css?family=Gayathri|Squada+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="title">LOL Champions</h1>
-    
-    <div class="champions">
-      <label>Escolha uma função:</label>
-      <select id="seletor">
-          <option value="none"></option>
-          <option value="Assassin">Assassino</option>
-          <option value="Marksman">Atirador</option>
-          <option value="Fighter">Lutador</option>
-          <option value="Mage">Mago</option>
-          <option value="Support">Suporte</option>
-          <option value="Tank">Tanque</option>
-      </select>
-      <div id="resultado"></div>
-     
+    <header>
+      <img class="logo" src="logo.png">
+      <h1 class="title">LOL Champions</h1>
+    </header>
+    <main>
+      <nav class="nav">
+        <button id="home"><i class="fas fa-home"></i></button>
+        <label>Função:</label>
+        <select id="seletor">
+            <option value="none"></option>
+            <option value="Assassin">Assassino</option>
+            <option value="Marksman">Atirador</option>
+            <option value="Fighter">Lutador</option>
+            <option value="Mage">Mago</option>
+            <option value="Support">Suporte</option>
+            <option value="Tank">Tanque</option>
+        </select>
+        <label>Ordenar:</label>
+        <select id="ordenar" disabled>
+            <option value="none"></option>
+            <option value="hp">HP</option>
+            <option value="attackdamage">AD</option>
+            <option value="attackspeedoffset">AS</option>
+            <option value="movespeed">MS</option>
+            <option value="hpregen">HR</option>
+            <option value="armor">AR</option>
+        </select>
+        <label>Level:</label>
+        <select id="level" disabled>
+            <option value="none"></option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+          </select>
+      </nav>
+        
+      <div class="champions">
+        <p id="legenda"></p>
+        <div id="resultado"></div>     
     </div>
     </main>
     <div id="root"></div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- <script src="data/injuries/injuries.js"></script> -->
     <script src="data/lol/lol.js"></script> 
     <!-- <script src="data/patient/patient.js"></script> -->
