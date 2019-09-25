@@ -47,7 +47,7 @@ document.getElementById("seletor").onchange = function selecionado(e) {
         legenda.innerHTML = "HP - Vida / AD - Dano de Ataque / AS - Velocidade de Ataque / MS - Velocidade de Movimento / HR- Regeneração de Vida / AR - Armadura";  
         return champions = data.map(function(name) {             
           return resultado.innerHTML +=`<span><img src="${dataLOL[name].img}"/><br>`+`${name}<br>`+
-          `<br>HP: ${calcular(dataLOL[name].stats.hp, dataLOL[name].stats.hpperlevel, seletor3).toFixed(1)}<br>`+
+          `<br>HP: ${calcular(dataLOL[name].stats.hp, dataLOL[name].stats.hpperlevel, seletor3  ).toFixed(1)}<br>`+
           `AD: ${calcular(dataLOL[name].stats.attackdamage, dataLOL[name].stats.attackdamageperlevel, seletor3).toFixed(2)}<br>`+
           `AS: ${calcular(parseFloat(0.625/(1+(dataLOL[name].stats.attackspeedoffset))), dataLOL[name].stats.attackspeedperlevel, seletor3).toFixed(3)}<br>`+
           `MS: ${dataLOL[name].stats.movespeed}<br>`+
