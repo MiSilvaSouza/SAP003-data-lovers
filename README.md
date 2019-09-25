@@ -2,8 +2,8 @@
 
 # DEFINIÇÃO DO PRODUTO
 
-Uma aplicação que fornece ao jogador de Leangue of Legends (LOL), em formato dashboard, informações sobre um personagem (campeão) de acordo com os tipos de funções escolhidas.
-Essas informações são:
+A página web apresentada com o nome The Best Champions, possibilita ao jogador de Leangue of Legends (LOL), montar um dashboard, com informações sobre personagens (campeões), sendo possível filtrar por função e ordenar de forma crescente e decrescente de acordo com os tipos de características escolhidas.
+Essas características são:
   - Vida
   - Dano de Ataque
   - Regeneração de Vida
@@ -11,9 +11,16 @@ Essas informações são:
   - Velocidade de Ataque
   - Velocidade de Movimento
 
-  O usuário poderá visualizar essas informações em ordem crescente ou decrescente. Ele também poderá ver as informações calculadas por level escolhido.
+  Além de ordenar, é possível visualizar as características do personagem por level escolhido.
+  O produto foi desenvolvido de acordo com as histórias dos usuários.
+  O protótipo inicial atendeu as necessidades do usuário 1.
+  O protótipo final atendeu as necessidades dos usuários 2 e 3.
+  
+  PROTÓTIPO INICIAL
 
-  PROTÓTIPO 1
+![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
+
+ PROTÓTIPO FINAL
 
 ![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
 
@@ -27,7 +34,8 @@ Para conhercermos melhor nossos usuários, buscamos estatísticas sobre o perfil
  - 85% acompanham o Campeonato Brasileiro de LoL – CBLoL.
  - 52% afirmam que gostam mais de esportes eletrônicos que os tradicionais, como futebol e basquete.
 [Fonte](https://www.whow.com.br/global-trends/riot-jogadores-lol-game/) 
- 
+
+As personas para qual direcionamos a aplicação, estão definidas abaixo: 
 
 **Henrique Batista**
 
