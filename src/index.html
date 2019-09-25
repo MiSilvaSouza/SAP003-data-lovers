@@ -17,47 +17,64 @@
     </header>
     <nav class="bar">
       <button id="home">Home</button>
-      <select id="option">
-        <option value="none">Filtrar</option>
-        <option value="Assassin">Assassinos</option>
-        <option value="Tank">Tanque</option>
-        <option value="Fighter">Lutador</option>
-        <option value="Mage">Mágicos</option>
-        <option value="Marksman">Atirador</option>
-        <option value="Support">Suporte</option>
-      </select>
-      <select id="higher">
-        <option value="none">Ordenar maior</option>
-        <option value="life">vida</option>
-        <option value="damage">AD</option>
-        <option value="velAttack">AS</option>
-        <option value="velMove">vel.Move</option>
-        <option value="regenLife">reg.Vida</option>
-        <option value="armor">armadura</option>
-      </select>
-      <select id="level">
-        <option value="none">Level</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-      </select>
+      <ul class="menu">
+        <li class="drop">Filtrar
+          <ul id=option>
+            <li class="drop"><a id="Assassin">Assassinos</a></li>
+            <li class="drop"><a id="Tank">Tanque</a></li>
+            <li class="drop"><a id="Fighter">Lutador</a></li>
+            <li class="drop"><a id="Mage">Mágicos</a></li>
+            <li class="drop"><a id="Marksman" >Atirador</a></li>
+            <li class="drop"><a id="Support">Suporte</a></li>
+          </ul>
+        </li>
+        <li class="drop">Ordenar
+          <ul id="order">
+            <li class="drop"><a id="decrescente">Decrescente</a></li>
+              <ul id="higher">
+                <li class="drop"><a id="life">Vida</a></li>
+                <li class="drop"><a id="AD">AD</a></li>
+                <li class="drop"><a id="AS">AS</a></li>
+                <li class="drop"><a id="velMove">vel.Move</a></li>
+                <li class="drop"><a id="regLife">reg.Vida</a></li>
+                <li class="drop"><a id="armadura">armadura</a></li>
+              </ul>
+            <li class="drop"><a id="crescente">Crescente</a></li>
+              <ul id="higher">
+                <li class="drop"><a id="life">vida</a></li>
+                <li class="drop"><a id="AD">AD</a></li>
+                <li class="drop"><a id="AS">AS</a></li>
+                <li class="drop"><a id="velMove">vel.Move</a></li>
+                <li class="drop"><a id="regLife">reg.Vida</a></li>
+                <li class="drop"><a id="armadura">armadura</a></li>
+              </ul>
+          </ul>
+        </li>
+        <li class="drop">Level
+          <ul id="level">
+            <li class="drop"><a id="1">1</a></li>
+            <li class="drop"><a id="2">2</a></li>
+            <li class="drop"><a id="3">3</a></li>
+            <li class="drop"><a id="4">4</a></li>
+            <li class="drop"><a id="5">5</a></li>
+            <li class="drop"><a id="6">6</a></li>
+            <li class="drop"><a id="7">7</a></li>
+            <li class="drop"><a id="8">8</a></li>
+            <li class="drop"><a id="9">9</a></li>
+            <li class="drop"><a id="10">10</a></li>
+            <li class="drop"><a id="11">11</a></li>
+            <li class="drop"><a id="12">12</a></li>
+            <li class="drop"><a id="13">13</a></li>
+            <li class="drop"><a id="14">14</a></li>
+            <li class="drop"><a id="15">15</a></li>
+            <li class="drop"><a id="16">16</a></li>
+            <li class="drop"><a id="17">17</a></li>
+            <li class="drop"><a id="18">18</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </div>
-  </nav>
   <main class="board">
     <div id="Champions"></div>
   </main>

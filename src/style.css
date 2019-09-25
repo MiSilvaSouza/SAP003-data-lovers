@@ -4,6 +4,54 @@ body {
     font-family: 'Gayathri', sans-serif;
     font-family: 'Squada One', cursive;
 }
+.drop {
+    color:black;
+    background: darkorange;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+}
+ul li ul {
+    display: block;
+    visibility:hidden;
+    position: absolute;
+    margin-top: 5px;
+    left: 10px;
+}
+a:hover {
+    cursor: pointer;
+    color: #f60d0d;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+    display: block;
+    z-index: 100;
+}
+#order:active > ul,
+#higher:active {
+    visibility: visible;
+    display: block;
+}
+ul li ul li ul li{
+    clear: both; 
+    width: 100%;
+    display: block;
+    z-index: 100;
+    visibility:hidden;
+    position: absolute;
+    margin-top: 5px;
+    left: 10px;
+}
+header {
+    margin: 15px 0 0 0;
+}
 .back{
     height: 60%;
     width: 100%;
@@ -23,16 +71,18 @@ h1 {
     margin-block-end: 0;
 }
 .cards {
+    z-index: 50;
+    position:relative;
     display: flex;
     align-items:center;
     box-sizing: border-box;
-    position: relative;
     border: 2px solid black;
     border-radius: 8px;
     background-color: rgb(200, 200, 200);
     text-align: center;
 }
 .infoChampions {
+    position:relative;
     display: flex;
     align-items:center;
     box-sizing: border-box;
@@ -67,8 +117,10 @@ select {
     font: 20px 'Squada One', cursive;
 }
 
+
 /*PC*/
 @media screen and (min-width:800px){
+
     #Champions {
         display: flex;
         flex-flow: row wrap;
