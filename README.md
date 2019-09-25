@@ -18,11 +18,11 @@ Essas características são:
   
   PROTÓTIPO INICIAL
 
-![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
+![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/prototipo_inicial.png)
 
  PROTÓTIPO FINAL
 
-![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/Layout_usu%C3%A1rio_1.png)
+![Layout Inicial](https://raw.githubusercontent.com/MiSilvaSouza/SAP003-data-lovers/master/src/prototipo_final.png)
 
 # História do Usuário
 
