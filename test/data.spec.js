@@ -5,28 +5,28 @@ describe("filtro", () => {
     expect(typeof data.filtro).toBe("function");
   });
 
-  it("retorna `nome do campeão`", () => {
-    expect(data.filtro(["Aatrox", "Ahri"], {"Aatrox": {"tags": ["Fighter", "Tank"]}, "Ahri": {"tags": ["Mage", "Assassin"]}}, "Mage")).toEqual(["Ahri"]);
+  it("retorna `array com campeões filtrados`", () => {
+    expect(data.filtro([{nome: "Aatrox", tag: ["Fighter", "Tank"]}, {nome: "Ahri", tag: ["Mage", "Assassin"]}], "Mage")).toEqual([{nome: "Ahri", tag: ["Mage", "Assassin"]}]);
   });
 });
 
-describe("mapInfo", () => {
-  it("é uma função", () => {
-    expect(typeof data.mapInfo).toBe("function");
-  });
-
-  it("retorna `valor do item selecionado`", () => {
-    expect(data.mapInfo(["Aatrox", "Ahri"], {"Aatrox": {"stats": {"hp": 537.8, "hpperlevel": 85, "mp": 105.6, }}, "Ahri": {"stats": {"hp": 514.4, "hpperlevel": 80, "mp": 334, }}}, "hp")).toEqual([537.8, 514.4]);
-  });
-});
-
-describe("ordenar", () => {
+describe("ordenamaior", () => {
   it("é uma função", () => {
     expect(typeof data.ordenamaior).toBe("function");
   });
 
-  it("retorna `valores da array na posição 1 em ordem decrescente`", () => {
-    expect(data.ordenamaior([["Vayne", 498.44], ["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4]])).toEqual([["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4], ["Vayne", 498.44]]);
+  it("retorna `valores da array em ordem decrescente`", () => {
+    expect(data.ordenamaior([{nome: "Vayne", hp: 498.44}, {nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}], "hp")).toEqual([{nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}, {nome: "Vayne", hp: 498.44}]);
+  });
+});
+
+describe("ordenamenor", () => {
+  it("é uma função", () => {
+    expect(typeof data.ordenamenor).toBe("function");
+  });
+
+  it("retorna `valores da array em ordem crescente`", () => {
+    expect(data.ordenamenor([{nome: "Vayne", hp: 498.44}, {nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}], "hp")).toEqual([{nome: "Vayne", hp: 498.44}, {nome: "Azir", hp: 524.4}, {nome: "Jayce", hp: 571.2}, {nome: "Urgot", hp: 586.52}]);
   });
 });
 

@@ -49,14 +49,14 @@ document.getElementById("seletor").onchange = function selecionado(e) {
   document.getElementById("escolher").disabled = false;
   document.getElementById("level").disabled = false;    
   let seletor1 = e.target.value;
-  const filtrados = filtro(infoChampions, seletor1);
-  console.log(filtrados);  
+  const filtrados = filtro(infoChampions, seletor1);    
   templatePro(filtrados);
   
   document.getElementById("ordenar").onchange = function selecionado(e) {
-    let seletor2 = e.target.value;
+    let seletor2 = e.target.value;    
     document.getElementById("escolher").onchange = function selecionado(e) {
       let seletor3 = e.target.value;
+      
       if (seletor3 === "decrescente") {        
         templatePro(ordenamaior(filtrados, seletor2));
       } else {
