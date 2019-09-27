@@ -1,6 +1,5 @@
 window.data = {
-  filtro: filtro,
-  mapInfo: mapInfo,  
+  filtro: filtro,    
   ordenamaior: ordenamaior,
   ordenamenor: ordenamenor,
   calcular: calcular
@@ -8,10 +7,6 @@ window.data = {
 
 function filtro(data, condition) {
   return data.filter(item => item.tag.includes(condition));
-}
-
-function mapInfo(data, condition) {
-  return data.map(item => item.stats[condition]);  
 }
 
 function ordenamaior (data, sortBy) {
