@@ -1,20 +1,25 @@
 window.data = {
   filtro: filtro,
   mapInfo: mapInfo,  
-  ordenar: ordenar,
+  ordenamaior: ordenamaior,
+  ordenamenor: ordenamenor,
   calcular: calcular
 };
 
-function filtro(data, way, condition) {
-  return data.filter(item => way[item].tags.includes(condition));
+function filtro(data, condition) {
+  return data.filter(item => item.tag.includes(condition));
 }
 
-function mapInfo(data, way, condition) {
-  return data.map(item => way[item].stats[condition]);  
+function mapInfo(data, condition) {
+  return data.map(item => item.stats[condition]);  
 }
 
-function ordenar (data) {
-  return data.sort((a, b) => b[1] - a[1]); 
+function ordenamaior (data, sortBy) {
+  return data.sort((a, b) => b[sortBy] - a[sortBy]); 
+}
+
+function ordenamenor (data, sortBy) {
+  return data.sort((a, b) => a[sortBy] - b[sortBy]); 
 }
 
 function calcular (data, perlevel, level) {
