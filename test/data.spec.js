@@ -22,11 +22,11 @@ describe("mapInfo", () => {
 
 describe("ordenar", () => {
   it("é uma função", () => {
-    expect(typeof data.ordenar).toBe("function");
+    expect(typeof data.ordenamaior).toBe("function");
   });
 
   it("retorna `valores da array na posição 1 em ordem decrescente`", () => {
-    expect(data.ordenar([["Vayne", 498.44], ["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4]])).toEqual([["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4], ["Vayne", 498.44]]);
+    expect(data.ordenamaior([["Vayne", 498.44], ["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4]])).toEqual([["Urgot", 586.52], ["Jayce", 571.2], ["Azir", 524.4], ["Vayne", 498.44]]);
   });
 });
 
