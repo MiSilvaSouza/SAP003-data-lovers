@@ -71,7 +71,7 @@ document.getElementById("seletor").onchange = function selecionado(e) {
       resultado.innerHTML = "";
       legenda.innerHTML = "HP - Vida / AD - Dano de Ataque / AS - Velocidade de Ataque / MS - Velocidade de Movimento / HR- Regeneração de Vida / AR - Armadura";  
       data.map(function(item) {
-        return resultado.innerHTML +=`<span><img src="${item.img}"/><br>`+`${item.nome}<br>`+`<br>HP: ${calcular(+item.hp, +item.hplvl, +seletor4).toFixed(1)}<br>`+`AD: ${calcular(+item.ad, +item.adlvl, +seletor4).toFixed(2)}<br>`+`AS: ${calcular(+item.as, +item.aslvl, +seletor4).toFixed(3)}<br>`+`MS: ${item.ms}<br>`+`HR: ${calcular(+item.hr, +item.hrlvl, +seletor4).toFixed(2)}<br>`+`AR: ${calcular(+item.ar, +item.arlvl, +seletor4).toFixed(2)}</br></span>`; 
+        return resultado.innerHTML +=`<span><img src="${item.img}"/><br>`+`${item.nome}<br>`+`<br>HP: ${calcular(+item.hp, +item.hplvl, +seletor4).toFixed(1)}<br>`+`AD: ${calcular(+item.ad, +item.adlvl, +seletor4).toFixed(2)}<br>`+`AS: ${calcularAS(+item.as, +item.aslvl, +seletor4).toFixed(3)}<br>`+`MS: ${item.ms}<br>`+`HR: ${calcular(+item.hr, +item.hrlvl, +seletor4).toFixed(2)}<br>`+`AR: ${calcular(+item.ar, +item.arlvl, +seletor4).toFixed(2)}</br></span>`; 
       });
     };
     templateLvl(filtrados);  
