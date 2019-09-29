@@ -2,7 +2,8 @@ window.data = {
   filtro: filtro,    
   ordenamaior: ordenamaior,
   ordenamenor: ordenamenor,
-  calcular: calcular
+  calcular: calcular,
+  calcularAS: calcularAS
 };
 
 function filtro(data, condition) {
@@ -19,4 +20,8 @@ function ordenamenor (data, sortBy) {
 
 function calcular (data, perlevel, level) {
   return data + (perlevel * (level -1)); 
+}
+
+function calcularAS (data, perlevel, level) {
+  return data * ((1+ (perlevel/100) * (level -1))); 
 }

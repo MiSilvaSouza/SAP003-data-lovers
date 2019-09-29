@@ -39,3 +39,13 @@ describe("calcular", () => {
     expect(data.calcular(537.8, 85, 2)).toEqual(622.8);
   });
 });
+
+describe("calcularAS", () => {
+  it("é uma função", () => {
+    expect(typeof data.calcularAS).toBe("function");
+  });
+
+  it("retorna `valor calculado por level`", () => {
+    expect(data.calcularAS(0.651, 3, 2)).toEqual(0.6705300000000001);
+  });
+});
