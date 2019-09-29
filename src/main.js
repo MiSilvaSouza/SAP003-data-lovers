@@ -1,13 +1,14 @@
 const spaceChampions = document.getElementById("Champions");
 const dataChampions = LOL.data;
 let infoChampions = [];
+let filtrados;
 
 Object.keys(dataChampions).forEach((name) => {
   let img = (dataChampions[name].img);
   let action = (dataChampions[name].tags).toString();
-  let life = dataChampions[name].stats.hp;
-  let lifeLevel = dataChampions[name].stats.hpperlevel;
-  let AD = dataChampions[name].stats.attackdamage;
+  let life = (dataChampions[name].stats.hp);
+  let lifeLevel = (dataChampions[name].stats.hpperlevel);
+  let AD = (dataChampions[name].stats.attackdamage);
   let ADLevel = dataChampions[name].stats.attackdamageperlevel;
   let AS = (0.625/(1+(dataChampions[name].stats.attackspeedoffset))).toFixed(3);
   let ASLevel = dataChampions[name].stats.attackspeedperlevel;
@@ -29,8 +30,6 @@ function template(data) {
 
 window.onload = template(infoChampions);
 
-document.getElementById("home").addEventListener("click", template(infoChampions));
-
 function cardsChampions(data) {
   spaceChampions.innerHTML = "";
   data.forEach((i) => {
@@ -39,24 +38,25 @@ function cardsChampions(data) {
   });
 }
 
-let filtrados;
-document.getElementById("option").addEventListener("click", function(e) {
-  let option = e.target.id;
+document.getElementById("filter").addEventListener("change", function(e) {
+  let option = e.target.value;
+  document.getElementById("order").disabled = false;
+  document.getElementById("higher").disabled = false; 
   filtrados = datajs.filterData(infoChampions, option);
   cardsChampions(filtrados);
   return filtrados;
 });
 
-document.getElementById("order").addEventListener("click", function(e) {
-  let selection = e.target.id;
-  document.getElementById("higher").addEventListener("click", function(e) {
-  let ord = e.target.id;
-  cardsChampions(datajs.orderData (filtrados, selection, ord));
-  })});
+document.getElementById("higher").addEventListener("change", () => {
+  let ord = document.getElementById("order").value;
+  document.getElementById("level").disabled = false;  
+  let selection = document.getElementById("higher").value;
+  cardsChampions(datajs.orderData (datajs.orderData (filtrados, selection, ord)));
+});
 
-document.getElementById("level").addEventListener("click", function(e) {
+document.getElementById("level").addEventListener("change", function(e) {
   spaceChampions.innerHTML = "";
-  let selection =+ e.target.id;
+  let selection =+ e.target.value - 1;
   datajs.computeStats(filtrados, selection);
   cardsChampions(infoLevel); 
-})
+});
