@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Data Lovers</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,69 +17,69 @@
 	<nav class="bar">
 		<button id="home" onclick="window.location.reload()">Home</button>
 		<div class="shadow">
-		<label>Filtrar</label>
-		<select id="filter">
-			<option value="none"></option>
-			<option value="Assassin">Assassinos</option>
-			<option value="Tank">Tanque</option>
-			<option value="Fighter">Lutador</option>
-			<option value="Mage">Mago</option>
-			<option value="Marksman">Atirador</option>
-			<option value="Support">Suporte</option>
-		</select>
-	</div>
-	<div class="shadow">
-    <p>Ordenar</p>
-    <div class="ord">
-		<label>forma:</label>
-		<select id="order" disabled>
-			<option value="none"></option>
-			<option value="crescente">Crescente</option>
-			<option value="decrescente">Decrescente</option>
-		</select>
-		<label>característica:</label>
-		<select id="higher" disabled>
-			<option value="none"></option>
-			<option value="life">vida</option>
-			<option value="AD">AD</option>
-			<option value="AS">AS</option>
-			<option value="velMove">vel.Move</option>
-			<option value="regLife">reg.Vida</option>
-			<option value="armadura">armadura</option>
-    </select>
-  </div>
-	</div>
-	<div class="shadow">
-		<label>Level</label>
-		<select id="level" disabled>
-			<option value="none"></option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">11</option>
-			<option value="12">12</option>
-			<option value="13">13</option>
-			<option value="14">14</option>
-			<option value="15">15</option>
-			<option value="16">16</option>
-			<option value="17">17</option>
-			<option value="18">18</option>
-		</select>
-	</div>
+			<label>Filtrar</label>
+			<select id="filter">
+				<option value="none"></option>
+				<option value="Assassin">Assassinos</option>
+				<option value="Tank">Tanque</option>
+				<option value="Fighter">Lutador</option>
+				<option value="Mage">Mago</option>
+				<option value="Marksman">Atirador</option>
+				<option value="Support">Suporte</option>
+			</select>
+		</div>
+		<div class="shadow">
+			<p>Ordenar</p>
+			<div class="ord">
+				<label>forma:</label>
+				<select id="order" disabled>
+					<option value="none"></option>
+					<option value="crescente">Crescente</option>
+					<option value="decrescente">Decrescente</option>
+				</select>
+				<label>característica:</label>
+				<select id="higher" disabled>
+					<option value="none"></option>
+					<option value="life">vida</option>
+					<option value="AD">AD</option>
+					<option value="AS">AS</option>
+					<option value="velMove">vel.Move</option>
+					<option value="regLife">reg.Vida</option>
+					<option value="armadura">armadura</option>
+				</select>
+			</div>
+		</div>
+		<div class="shadow">
+			<label>Level</label>
+			<select id="level" disabled>
+				<option value="none"></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+			</select>
+		</div>
 	</nav>
 	<main class="board">
 		<div id="Champions"></div>
 	</main>
 	<footer>
-    <p>Desenvolvido por: Jéssika Fujimura e Mirian Souza</p>
-    <p>Laboratória São Paulo</p>
+		<p>Desenvolvido por: Jéssika Fujimura e Mirian Souza</p>
+		<p>Laboratória São Paulo</p>
 	</footer>
 	<div id="root"></div>
 	<script src="data/lol/lol.js"></script>

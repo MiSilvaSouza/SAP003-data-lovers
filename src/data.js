@@ -17,12 +17,12 @@ function computeStats(data, index) {
   for (let i in data) {
     let name = data[i].name;
     let img = data[i].img;
-    let life = parseFloat(((data[i].life)+(index*(data[i].lifeLevel))).toFixed(2));
-    let AD = parseFloat(((data[i].AD)+(index*(data[i].ADLevel))).toFixed(2));
-    let AS = parseFloat(((data[i].AS)*(1+(index*(data[i].ASLevel/100)))).toFixed(2));
+    let life = parseFloat(((data[i].life)+(index*(data[i].lifeLevel))).toFixed(3));
+    let AD = parseFloat(((data[i].AD)+(index*(data[i].ADLevel))).toFixed(3));
+    let AS = parseFloat(((data[i].AS)*(1+(index*(data[i].ASLevel/100)))).toFixed(3));
     let velMove = data[i].velMove;
-    let regLife = parseFloat(((data[i].regLife)+(index*(data[i].regLifeLevel))).toFixed(2));
-    let armadura = parseFloat(((data[i].armadura)+(index*(data[i].armaduraLevel))).toFixed(2));
+    let regLife = parseFloat(((data[i].regLife)+(index*(data[i].regLifeLevel))).toFixed(3));
+    let armadura = parseFloat(((data[i].armadura)+(index*(data[i].armaduraLevel))).toFixed(3));
     infoLevel.push({name, img, life, AD, AS, velMove, regLife, armadura});
   }
   return infoLevel;

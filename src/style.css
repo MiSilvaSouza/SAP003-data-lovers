@@ -33,12 +33,21 @@ select {
   font: 20px 'Grenze', serif ;
   margin: 0; 
   border-radius: 5px;
-  background-color:#314c21; 
+  background-color:#4d8a29; 
   text-align: center;
+}
+.shadow {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1%;
 }
 .shadow p {
   margin: 0;
   padding: 0;
+}
+.shadow:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px #314c21;
 }
 .ord {
   display: inline-block;
@@ -47,6 +56,7 @@ select {
 #home {
   font: 20px 'Grenze', serif ;
   padding: 5px;
+  border-radius: 5px;
 }
 .cards {
   position:relative;
@@ -76,7 +86,7 @@ footer {
 }
 
 /*PC*/
-@media screen and (min-width:800px){
+@media screen and (min-width:800px) {
   h1 {
     font-size: 450%;
     text-shadow: 10px 10px 20px #84632c;
@@ -89,27 +99,6 @@ footer {
   padding: 1%;
   height: 50%;
   font-size: 25px;
-  }
-  select {
-    box-sizing: border-box;
-    font: 20px 'Grenze', serif ;
-    margin: 0; 
-    border-radius: 5px;
-    background-color:#314c21; 
-    text-align: center;
-  }
-  .shadow {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1%;
-  }
-  .shadow:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 20px 10px #314c21;
-  }
-  .ord {
-    display: inline-block;
-    width: 100%;
   }
   #Champions {
     display: flex;
@@ -154,27 +143,8 @@ footer {
     height: 30%;
     font-size: 18px;
   }
-  select {
-    box-sizing: border-box;
-    font: 20px 'Grenze', serif ;
-    margin: 0; 
-    border-radius: 5px;
-    background-color:#314c21; 
-    text-align: center;
-  }
   .shadow {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1%;
     margin: 3% 0;
-  }
-  .shadow:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 20px 10px #314c21;
-  }
-  .ord {
-    display: inline-block;
-    width: 100%;
   }
   #Champions {
     display: flex;
