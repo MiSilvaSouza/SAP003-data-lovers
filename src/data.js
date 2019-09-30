@@ -1,27 +1,35 @@
-window.data = {
-  filtro: filtro,    
-  ordenamaior: ordenamaior,
-  ordenamenor: ordenamenor,
-  calcular: calcular,
-  calcularAS: calcularAS
-};
-
-function filtro(data, condition) {
-  return data.filter(item => item.tag.includes(condition));
+function filterData(data, condition) {
+  return data.filter(item => item.action.includes(condition));
 }
 
-function ordenamaior (data, sortBy) {
-  return data.sort((a, b) => b[sortBy] - a[sortBy]); 
+function orderData(data, sortyBy, sortOrder) {
+  if (sortOrder === "decrescente") {
+    let order = data.sort((a, b) => a[sortyBy] > b[sortyBy] ? -1 : a[sortyBy] < b[sortyBy] ? 1 :0);
+    return order;
+  } else {
+    let order = data.sort((a, b) => a[sortyBy] > b[sortyBy] ? 1 : a[sortyBy] < b[sortyBy] ? -1 :0);
+    return order;
+  }
+} 
+
+let infoLevel = [];
+function computeStats(data, index) {
+  for (let i in data) {
+    let name = data[i].name;
+    let img = data[i].img;
+    let life = parseFloat(((data[i].life)+(index*(data[i].lifeLevel))).toFixed(3));
+    let AD = parseFloat(((data[i].AD)+(index*(data[i].ADLevel))).toFixed(3));
+    let AS = parseFloat(((data[i].AS)*(1+(index*(data[i].ASLevel/100)))).toFixed(3));
+    let velMove = data[i].velMove;
+    let regLife = parseFloat(((data[i].regLife)+(index*(data[i].regLifeLevel))).toFixed(3));
+    let armadura = parseFloat(((data[i].armadura)+(index*(data[i].armaduraLevel))).toFixed(3));
+    infoLevel.push({name, img, life, AD, AS, velMove, regLife, armadura});
+  }
+  return infoLevel;
 }
 
-function ordenamenor (data, sortBy) {
-  return data.sort((a, b) => a[sortBy] - b[sortBy]); 
-}
-
-function calcular (data, perlevel, level) {
-  return data + (perlevel * (level -1)); 
-}
-
-function calcularAS (data, perlevel, level) {
-  return data * ((1+ (perlevel/100) * (level -1))); 
-}
+window.datajs = {
+  filterData: filterData,
+  orderData: orderData,
+  computeStats: computeStats
+}; 
