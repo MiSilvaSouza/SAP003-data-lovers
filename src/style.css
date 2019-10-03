@@ -48,24 +48,30 @@ i {
   margin: 30px;
   padding: 10px;
   word-spacing: 10px;
-  text-align: center;      
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+     
 }
 
 span {
   background-color: #ffffe8;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 80px;    
   margin: 0.37%;
   margin-top: 1%;
   padding: 15px;
-  text-align: center;    
+  text-align: center;
+  flex-flow: column nowrap;
+  flex-direction: column;  
   
 }
 
 #resultado {   
   display: flex;    
-  flex-wrap: wrap;    
+  flex-flow: row wrap;
+  justify-content: space-around;   
 }
 
 #legenda{
