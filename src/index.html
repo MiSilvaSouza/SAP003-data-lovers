@@ -10,57 +10,57 @@
 
 <body>
 	<header>
-		<img class="logo" src="League_of_Legends_logo.png">
+		<img class="logo" src="logo.png">
 		<h1>The Best Champions</h1>
 	</header>
 	<nav class="bar">
 		<button id="home" onclick="window.location.reload()">Home</button>
 		<div class="shadow">
-			<label>Filtrar</label>
+			<label>Filtrar:</label>
 			<select id="filter">
 				<option value="none"></option>
-				<option value="Assassin">Assassinos</option>
-				<option value="Tank">Tanque</option>
-				<option value="Fighter">Lutador</option>
-				<option value="Mage">Mago</option>
+				<option value="Assassin">Assassino</option>
 				<option value="Marksman">Atirador</option>
+				<option value="Fighter">Lutador</option>
+				<option value="Tank">Tanque</option>				
+				<option value="Mage">Mago</option>				
 				<option value="Support">Suporte</option>
 			</select>
 		</div>
 		<div class="shadow">
 			<p>Ordenar</p>
 			<div class="ord">
-				<label>forma:</label>
+				<label>Forma:</label>
 				<select id="order" disabled>
 					<option value="none"></option>
 					<option value="crescente">Crescente</option>
 					<option value="decrescente">Decrescente</option>
 				</select>
-				<label>característica:</label>
+				<label>Característica:</label>
 				<select id="higher" disabled>
 					<option value="none"></option>
-					<option value="life">vida</option>
-					<option value="AD">AD</option>
-					<option value="AS">AS</option>
-					<option value="velMove">vel.Move</option>
-					<option value="regLife">reg.Vida</option>
-					<option value="armadura">armadura</option>
+					<option value="hp">HP</option>
+					<option value="ad">AD</option>
+					<option value="as">AS</option>
+					<option value="ms">MS</option>
+					<option value="hr">HR</option>
+					<option value="ar">AR</option>
 				</select>
 			</div>
 		</div>
 		<div class="shadow">
-			<label>Level</label>
+			<label>Level:</label>
 			<select id="level" disabled>
 				<option value="none"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
 				<option value="10">10</option>
 				<option value="11">11</option>
 				<option value="12">12</option>
@@ -74,7 +74,8 @@
 		</div>
 	</nav>
 	<main class="board">
-		<div id="Champions"></div>
+		<div id="subtitle"></div>
+		<div id="champions"></div>
 	</main>
 	<footer>
 		<p>Desenvolvido por: Jéssika Fujimura e Mirian Souza</p>
