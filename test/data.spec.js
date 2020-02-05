@@ -1,51 +1,40 @@
 require("../src/data.js");
 
-describe("filtro", () => {
+describe("filterData", () => {
   it("é uma função", () => {
-    expect(typeof data.filtro).toBe("function");
+    expect(typeof data.filterData).toBe("function");
   });
 
   it("retorna `array com campeões filtrados`", () => {
-    expect(data.filtro([{nome: "Aatrox", tag: ["Fighter", "Tank"]}, {nome: "Ahri", tag: ["Mage", "Assassin"]}], "Mage")).toEqual([{nome: "Ahri", tag: ["Mage", "Assassin"]}]);
+    expect(data.filterData([{nome: "Aatrox", tag: ["Fighter", "Tank"]}, {nome: "Ahri", tag: ["Mage", "Assassin"]}], "Mage")).toEqual([{nome: "Ahri", tag: ["Mage", "Assassin"]}]);
   });
 });
 
-describe("ordenamaior", () => {
+describe("orderData", () => {
+  it("is a function", () => {
+    expect(typeof data.orderData).toBe("function");
+  });
+  it("returns ordenados", () => {
+    expect(data.orderData([{name: "Tryndamere", life: 625.64}, {name: "Irelia", life: 607.2}, {name: "XinZhao", life: 600}, {name: "MasterYi", life: 598.56}, {name: "Jax", life: 592.8}], "life", "crescente")).toEqual ([{name: "Jax", life: 592.8}, {name: "MasterYi", life: 598.56}, {name: "XinZhao", life: 600}, {name: "Irelia", life: 607.2}, {name: "Tryndamere", life: 625.64}]);
+  });
+}); 
+
+describe("computeStats", () => {
   it("é uma função", () => {
-    expect(typeof data.ordenamaior).toBe("function");
-  });
-
-  it("retorna `valores da array em ordem decrescente`", () => {
-    expect(data.ordenamaior([{nome: "Vayne", hp: 498.44}, {nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}], "hp")).toEqual([{nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}, {nome: "Vayne", hp: 498.44}]);
-  });
-});
-
-describe("ordenamenor", () => {
-  it("é uma função", () => {
-    expect(typeof data.ordenamenor).toBe("function");
-  });
-
-  it("retorna `valores da array em ordem crescente`", () => {
-    expect(data.ordenamenor([{nome: "Vayne", hp: 498.44}, {nome: "Urgot", hp: 586.52}, {nome: "Jayce", hp: 571.2}, {nome: "Azir", hp: 524.4}], "hp")).toEqual([{nome: "Vayne", hp: 498.44}, {nome: "Azir", hp: 524.4}, {nome: "Jayce", hp: 571.2}, {nome: "Urgot", hp: 586.52}]);
-  });
-});
-
-describe("calcular", () => {
-  it("é uma função", () => {
-    expect(typeof data.calcular).toBe("function");
+    expect(typeof data.computeStats).toBe("function");
   });
 
   it("retorna `valor calculado por level`", () => {
-    expect(data.calcular(537.8, 85, 2)).toEqual(622.8);
+    expect(data.computeStats(537.8, 85, 2)).toEqual(622.8);
   });
 });
 
-describe("calcularAS", () => {
+describe("computeStatsAS", () => {
   it("é uma função", () => {
-    expect(typeof data.calcularAS).toBe("function");
+    expect(typeof data.computeStatsAS).toBe("function");
   });
 
   it("retorna `valor calculado por level`", () => {
-    expect(data.calcularAS(0.651, 3, 2)).toEqual(0.6705300000000001);
+    expect(data.computeStatsAS(0.651, 3, 2)).toEqual(0.6705300000000001);
   });
 });

@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Gayathri|Squada+One&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <img class="logo" src="logo.png">
-      <h1 class="title">The Best Champions</h1>
-    </header>
-    <main>
-      <nav class="nav">
-        <button id="home"><i class="fas fa-home"></i></button>
-        <label>Função:</label>
-        <select id="seletor">
-            <option value="none"></option>
-            <option value="Assassin">Assassino</option>
-            <option value="Marksman">Atirador</option>
-            <option value="Fighter">Lutador</option>
-            <option value="Mage">Mago</option>
-            <option value="Support">Suporte</option>
-            <option value="Tank">Tanque</option>
-        </select>
-        <label>Ordenar:</label>
-        <select id="ordenar" disabled>
-          <option value="none"></option>
-          <option value="hp">HP</option>
-          <option value="ad">AD</option>
-          <option value="as">AS</option>
-          <option value="ms">MS</option>
-          <option value="hr">HR</option>
-          <option value="ar">AR</option>
-        </select>
-        <select id="escolher" disabled>
-          <option value="none"></option>
-          <option value="crescente">Crescente</option>
-          <option value="decrescente">Decrescente</option>          
-        </select>
-        <label>Level:</label>
-        <select id="level" disabled>
-            <option value="none"></option>
-            <option value="1">01</option>
-            <option value="2">02</option>
-            <option value="3">03</option>
-            <option value="4">04</option>
-            <option value="5">05</option>
-            <option value="6">06</option>
-            <option value="7">07</option>
-            <option value="8">08</option>
-            <option value="9">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-          </select>
-      </nav>
-        
-      <div class="champions">
-        <p id="legenda"></p>
-        <div id="resultado"></div>     
-    </div>
-    </main>
-    <div id="root"></div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- <script src="data/injuries/injuries.js"></script> -->
-    <script src="data/lol/lol.js"></script> 
-    <!-- <script src="data/patient/patient.js"></script> -->
-    <!-- <script src="data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="data/rickandmorty/rickandmorty.js"></script> -->
-    <!-- <script src="data/steam/steam.js"></script> -->
-    <!-- <script src="data/worldbank/worldbank.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Data Lovers</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="logo.png">
+		<h1>The Best Champions</h1>
+	</header>
+	<nav class="bar">
+		<button id="home" onclick="window.location.reload()">Home</button>
+		<div class="shadow">
+			<label>Filtrar:</label>
+			<select id="filter">
+				<option value="none"></option>
+				<option value="Assassin">Assassino</option>
+				<option value="Marksman">Atirador</option>
+				<option value="Fighter">Lutador</option>
+				<option value="Tank">Tanque</option>				
+				<option value="Mage">Mago</option>				
+				<option value="Support">Suporte</option>
+			</select>
+		</div>
+		<div class="shadow">
+			<p>Ordenar</p>
+			<div class="ord">
+				<label>Forma:</label>
+				<select id="order" disabled>
+					<option value="none"></option>
+					<option value="crescente">Crescente</option>
+					<option value="decrescente">Decrescente</option>
+				</select>
+				<label>Característica:</label>
+				<select id="higher" disabled>
+					<option value="none"></option>
+					<option value="hp">HP</option>
+					<option value="ad">AD</option>
+					<option value="as">AS</option>
+					<option value="ms">MS</option>
+					<option value="hr">HR</option>
+					<option value="ar">AR</option>
+				</select>
+			</div>
+		</div>
+		<div class="shadow">
+			<label>Level:</label>
+			<select id="level" disabled>
+				<option value="none"></option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+			</select>
+		</div>
+	</nav>
+	<main class="board">
+		<div id="subtitle"></div>
+		<div id="champions"></div>
+	</main>
+	<footer>
+		<p>Desenvolvido por: Jéssika Fujimura e Mirian Souza</p>
+		<p>Laboratória São Paulo</p>
+	</footer>
+	<div id="root"></div>
+	<script src="data/lol/lol.js"></script>
+	<script src="data.js"></script>
+	<script src="main.js"></script>
+</body>
 </html>
